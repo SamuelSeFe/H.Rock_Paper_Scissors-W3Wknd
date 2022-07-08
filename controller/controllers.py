@@ -9,6 +9,8 @@ def index():
 
 @app.route('/roshambo/<input_p1>/<input_p2>')
 def roshambo(input_p1, input_p2):
-    return render_template('result.html', result=roshambo(input_p1, input_p2))
-    # print(roshambo(input_p1, input_p2))
-    # return render_template('result.html', result=Game(player1, player2.roshambo(input_p1, input_p2)))
+    player_1 = Player('Player_1', input_p1)
+    player_2 = Player('Player_2', input_p2)
+    game = Game(player_1, player_2)
+    return render_template('result.html', result=game.roshambo(input_p1, input_p2))
+

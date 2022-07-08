@@ -1,0 +1,36 @@
+h1 {
+   text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+body {
+    font-family: fantasy;
+    margin: 0;
+    background-color: darkgoldenrod;
+}
+
+section b {
+    color: black;
+}
+
+#rpc_p {
+    color: aquamarine;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: white;
+}

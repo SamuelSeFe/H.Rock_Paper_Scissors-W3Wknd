@@ -1,24 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Roshambo</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to <b>Ro</b>-<b>Sham</b>-<b>Bo</b></h1>
-    </header>
+{% extends "base.html" %}
 
+{% block content %}
+<body>
     <section class="how-to">
         <h2>How to play</h2>
-        <p>There are three options to choose from:</p>
+        <p>There are three options to choose from:
         <br>
-        <b>Rock, Paper or Scissors</b>
+        <b id="rpc_p">Rock, Paper or Scissors</b>
+        <br>
         <br>
         Once chosen, Player 1 will input their choice into the URL, followed by a '/' and then Player 2's choice.
+        </p>
     </section>
 </body>
-</html>
+{% endblock %}

@@ -3,7 +3,7 @@ class Game:
         self.player1 = _player1
         self.player2 = _player2
     
-    def roshambo(input_p1, input_p2):
+    def roshambo(self, input_p1, input_p2):
         if input_p1 == "rock" and input_p2 == "scissors":
             return f"Player 1 wins by playing {input_p1}"
         elif input_p1 == "rock" and input_p2 == "paper":
@@ -14,21 +14,14 @@ class Game:
             return f"Player 2 wins by playing {input_p2}"
         elif input_p1 == "scissors" and input_p2 == "paper":
             return f"Player 1 wins by playing {input_p1}"
-        else:
-            if input_p1 == "scissors" and input_p2 == "rock":
-                return f"Player 2 wins by playing {input_p2}"
-    
-    # def rock_vs_rock(input_p1, input_p2):
-    #     if input_p1 == "rock" and input_p2 == "rock":
-    #         return None
-    
-    # def paper_vs_paper(input_p1, input_p2):
-    #     if input_p1 == "paper" and input_p2 == "paper":
-    #         return None
-    
-    # def scissors_vs_scissors(input_p1, input_p2):
-    #     if input_p1 == "scissors" and input_p2 == "scissors":
-    #         return None
+        elif input_p1 == "scissors" and input_p2 == "rock":
+            return f"Player 2 wins by playing {input_p2}"
+        elif input_p1 == "rock" and input_p2 == "rock":
+            return None
+        elif input_p1 == "paper" and input_p2 == "paper":
+            return None
+        elif input_p1 == "scissors" and input_p2 == "scissors":
+            return None
     
     # def roshambo(p1_input, p2_input):
     #     if p1_input == "rock":
