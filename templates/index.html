@@ -1,16 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-<body>
-    <section class="how-to">
-        <h2>How to play</h2>
+<body id = "total_page2">
+    <section class="how-to-play">
+        <h2>How to play:</h2>
+        <br>
+        <p>There are 3 choices each player may select: <b>rock, paper, or scissors </p>
+        <p>Step 2: Select rock, paper, or scissors, followed by '/'</p>
+        <!-- 3 <p> tags to explain the rules and play:
+            1st: Welcome page with the route /roshambo. A 'submit' with "next" on the button at the end that takes you to the next page
+            2nd: This one explains the rules written in "look at wife_notes.1" 
+            3rd: Results page, already written
+        
+            Include a page vs computer with link?
+
+            In total: try and write code so that you can have drop down menus to submit answers when asked and submit buttons where you havve next to see the resolution of those actions -->
         <p>There are three options to choose from:
         <br>
         <b id="rpc_p">Rock, Paper or Scissors</b>
         <br>
         <br>
-        Once chosen, Player 1 will input their choice into the URL, followed by a '/' and then Player 2's choice.
+        Once chosen, Player 1 will input their choice into the URL followed by a '/'. Then Player 2 will input their choice.
         </p>
+        <p>E.g. /paper/scissors</p>
     </section>
 </body>
 {% endblock %}

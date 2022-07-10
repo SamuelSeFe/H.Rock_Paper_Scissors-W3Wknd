@@ -16,11 +16,7 @@ class Game:
             return f"Player 1 wins by playing {input_p1}"
         elif input_p1 == "scissors" and input_p2 == "rock":
             return f"Player 2 wins by playing {input_p2}"
-        elif input_p1 == "rock" and input_p2 == "rock":
-            return None
-        elif input_p1 == "paper" and input_p2 == "paper":
-            return None
-        elif input_p1 == "scissors" and input_p2 == "scissors":
+        elif input_p1 == "rock" and input_p2 == input_p1:
             return None
     
     # def roshambo(p1_input, p2_input):
